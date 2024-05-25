@@ -15,27 +15,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <div class="nav__bar">
-                <div class="logo">
-                    <a href="#"><img src="/Assets/Iconos/logo_cine_uy.png" alt=""></a>
-                </div>
-                <div class="nav__menu__btn" id="menu-btn">
-                    <i class="fa-solid fa-bars fa-lg"></i>
-                </div>
-            </div>
-            <ul class="nav__links" id="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Historia</a></li>
-                <li><a href="">Directores</a></li>
-                <li><a href="">Festivales</a></li>
-                <li><a href="">Premios</a></li>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Cine Uruguayo</a></div>
+            <ul class="links">
+                <li><a href="home">Home</a></li>
+                <li><a href="historia">Historia</a></li>
+                <li><a href="directores">Directores</a></li>
+                <li><a href="festivales">Festivales</a></li>
+                <li><a href="Premios">Premios</a></li>
             </ul>
-        </nav>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="home">Home</a></li>
+                <li><a href="historia">Historia</a></li>
+                <li><a href="directores">Directores</a></li>
+                <li><a href="festivales">Festivales</a></li>
+                <li><a href="Premios">Premios</a></li>
+            </div>
+        </div>
     </header>
 
+    <main>
+        <section class="container" id="hero">
+            <h1>Bienvenidos</h1>
+            <p>Uruguay en Cuadros: 125 años de Cine, <br />una historia que Inspira Pantalla a Pantalla</p>
+        </section>
 
+        <section id="primera">
+            <div class="container">
+                <div class="ladoIzquierdo"></div>
+                <div class="ladoDerecho">
+                    <h2>Historia del Cine en Uruguay</h2>
+                    <p>El cine uruguayo tiene una historia rica y diversa. Desde sus inicios a fines del siglo XIX, se han realizado películas de forma sostenida en el país. Algunos hitos incluyen: Período Silente: Registros fílmicos tempranos, como “Carrera de bicicletas en el velódromo de Arroyo Seco” (1898), considerada la primera película filmada en territorio uruguayo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="/main.js"></script>
 </body>
 </html>
