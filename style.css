@@ -91,6 +91,7 @@ section.container {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    margin-bottom: 50px;
     /*max-width: 1200px;*/
 }
 section#hero {
@@ -113,11 +114,39 @@ section#hero {
 }
 
 /*  Primera seccion */
-.historia {
+.containerHistoria {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image {
+    flex: 60%;
+    padding: 20px;
+}
+
+.image img {
+    width: 720px;
+}
+
+.textoHistoria {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
+  
+h2 {
+    font-size: 2rem;
+} 
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 /* Tarjetas Section */
 section#segunda {
     background-color: wheat;
@@ -136,15 +165,15 @@ section#segunda {
 .card {
     width: 270px;
     background-color: #f0f0f0;
-    margin: 10px;
+    margin-left: 10px;
     height: 625px;
     margin:10px;
     border-radius: 15px;
 }
 
 .card img {
-    width: 270px;
-    height: 300px;
+    width: 350px;
+    height: 380px;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
@@ -183,6 +212,118 @@ section#segunda {
     transition: all 1s ease;
 }
 
+/* Section Peliculas */
+.movies {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.containerMovies {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 750px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5%;
+
+}
+
+.card h2 .title {
+    font-size: 1.5rem;
+    /*margin: 10px 0;*/
+}
+
+.card h3 .subtitle {
+    font-size: 1rem;
+   /*margin: 10px 0;*/
+}
+
+.card p {
+    font-size: 1rem;
+    color: #111;
+}
+
+.card button {
+    display: block;
+    padding: 15px 20px;
+    background-color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 20px 50px;
+    color: #ffffff;
+    border: none;
+    width: 80%;
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+
+/* Directores */
+.directores {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-color: #ffffff;
+}
+
+.containerDirectores {
+    width: 1200px;
+    display: flex;
+    gap: 15px;
+}
+
+.cardDirector {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;    
+}
+
+.cardDirector img {
+    width: 100%;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+
+.cardDirector h2.titleDirector {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.cardDirector p.textoDirector{
+    font-size: 1rem;
+    color: #666;
+    margin: 10px;
+}
 /* Footer */
 footer {
     background-color: black;
@@ -200,16 +341,21 @@ footer {
 
 .socialIcons a {
     text-decoration: none;
-    padding: 10px;
-    margin: 10px;
+    padding: -5px;
+    margin: 0 2px;
     background-color: #ffffff;
     border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 
 .socialIcons a i {
-    font-size: .9em;
+    font-size: 1em;
     color: black;
-    opacity: 0.9;
+    opacity: 0.9; 
+    width: 25px;
+    height: 25px;
 }
 
 .socialIcons a:hover {
