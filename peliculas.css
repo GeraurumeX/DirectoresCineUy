@@ -1,0 +1,135 @@
+/*  Primera sección */
+.lastMovies {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.containerLastMovies {
+    max-width: 1200px; /* Ancho fijo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+}
+
+/* Sección izquierda (50%) */
+.left-section-movies {
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Título */
+.titleMovies {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ /* Características con bullets */
+ .features li {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Sección derecha (50%) */
+.right-section {
+    width: 50%;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+/* Imagen */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*  Segunda Sección */
+.festivales {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.conteinerFestivales {
+    background-color: #f0f0f0; /* Color gris */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardFestivales {
+    width: calc(50% - 20px);
+    /* Resta 20px para el margen entre las tarjetas */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardFestivales img {
+    max-width: 50%;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Galeria */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 10px); /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
