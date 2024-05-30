@@ -38,6 +38,7 @@
     width: 50%;
     padding: 20px;
     background-color: var(--color-background);
+    height: auto;
 }
 
 /* Título */
@@ -46,6 +47,7 @@
     padding-left: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #29282c;
 }
 
  /* Características con bullets */
@@ -60,17 +62,17 @@
 /* Sección derecha (50%) */
 .right-section {
     width: 50%;
-    padding: 0;
+    /*padding: 20px;*/
     background-color: var(--color-background);
 }
 
 /* Imagen */
-.image {
+.imagen {
     max-width: 100%;
     height: auto;
-    padding: 35px;
+    padding: 35px 0px 35px 80px;
+    
 }
-
 
 /*  Segunda Sección */
 .festivales {
@@ -166,7 +168,6 @@
 
 .gallery-item p {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
-    color: var(--color-texto-primario);
 }

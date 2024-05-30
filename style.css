@@ -13,7 +13,6 @@
 }
 
 body {
-    /*height: 100vh;*/
     background-color: #ffffff;
 }
 
@@ -28,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: #f7bb0e;
 }
 
 /*  Header */
@@ -101,10 +100,8 @@ section.container {
     background-position: center;
     background-repeat: repeat;
     height: 100vh;
-    /*margin-bottom: 50px;*/
-    /*max-width: 1200px;*/
-
 }
+
 section#hero {
     height: 85vh;
     display: flex;
@@ -115,21 +112,40 @@ section#hero {
     color: #ffffff;
 }
 
-#hero h1 {
+#hero h1 .titleHero {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
+.titleHero {
+    color: #f7bb0e;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p.textHero {
+    margin-top: 20px;
+    color: #f7bb0e;
+    font-weight: bold;
+}
+
 #hero p {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 /*  Primera seccion */
 .containerHistoria {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+    padding: 40px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
@@ -160,11 +176,11 @@ p {
 }
 
 /* Tarjetas Section */
-section#segunda {
+/*section#segunda {
     background-color: wheat;
-}
+}*/
 
-.card-container {
+/*.card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -172,22 +188,22 @@ section#segunda {
     width: 100%;
     margin: 0 auto;
     background-color: darkgrey;
-}
+}*/
 
-.card {
+/*.card {
+    flex: 1;
     width: 270px;
     background-color: #f0f0f0;
     margin-left: 10px;
     height: 625px;
-    margin:10px;
     border-radius: 15px;
-}
+}*/
 
 .card img {
     width: 350px;
     height: 380px;
     margin-bottom: 15px;
-    background-size: cover;
+    /*background-size: cover;*/
     border-radius: 15px 15px 0 0;
 }
 
@@ -204,7 +220,7 @@ section#segunda {
     
 }
 
-.card .btn {
+/*.card .btn {
     display: block;
     padding: 15px 20px;
     background-color: #333;
@@ -213,8 +229,7 @@ section#segunda {
     border-radius: 4px;
     margin: 20px 50px;
     color: #ffffff;
-    
-}
+}*/
 
 .card:hover {
     background-color: rgb(62, 62, 62);
@@ -229,6 +244,13 @@ section#segunda {
     margin: 0;
     padding: 0;
     background-color: var(--color-background-seccion);
+}
+
+.titleMovies {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
 }
 
 .containerMovies {
@@ -256,7 +278,7 @@ section#segunda {
 }
 
 .card h2 .title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     /*margin: 10px 0;*/
 }
 
@@ -272,8 +294,8 @@ section#segunda {
 
 .card button {
     display: block;
-    padding: 15px 20px;
-    background-color: #333;
+    padding: 10px 20px;
+    background-color: #f00000;
     text-align: center;
     text-decoration: none;
     border-radius: 4px;
@@ -281,6 +303,7 @@ section#segunda {
     color: #ffffff;
     border: none;
     width: 80%;
+    font-size: 1.5rem;
 }
 
 .card:hover {
@@ -330,6 +353,7 @@ section#segunda {
 .cardDirector h2.titleDirector {
     font-size: 1.5rem;
     margin: 10px;
+    text-align: center;
 }
 
 .cardDirector p.textoDirector{
