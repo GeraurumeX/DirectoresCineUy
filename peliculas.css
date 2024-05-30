@@ -1,8 +1,26 @@
+:root {
+    --color-background: #ffffff;
+    --color-background-seccion: #29282c;
+    --color-texto-primario: #29282c;
+    --color-texto-secundario: #ffffff;
+    --color-texto-navbar: #f7bb0e;
+    --background-button: #f00000;
+    --font: "Roboto", sans-serif;
+    --font-size-title: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
 /*  Primera sección */
 .lastMovies {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+
 }
 
 /* Contenedor principal */
@@ -19,12 +37,13 @@
 .left-section-movies {
     width: 50%;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--color-background);
 }
 
 /* Título */
 .titleMovies {
-    font-size: 36px;
+    font-size: var(--font-size-title);
+    padding-left: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -35,33 +54,42 @@
     padding-left: 20px;
     font-size: 24px;
     margin: 20px 0;
+    color: var(--color-texto-primario);
 }
 
 /* Sección derecha (50%) */
 .right-section {
     width: 50%;
     padding: 0;
-    background-color: #e0e0e0;
+    background-color: var(--color-background);
 }
 
 /* Imagen */
 .image {
     max-width: 100%;
     height: auto;
+    padding: 35px;
 }
 
 
 /*  Segunda Sección */
 .festivales {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
+    background-color: var(--color-background-seccion);
+}
+
+.titleFestivales {
+    font-size: var(--font-size-title);
+    padding: 20px;
+    text-align: center;
+    color: var(--color-texto-secundario);
 }
 
 .conteinerFestivales {
-    background-color: #f0f0f0; /* Color gris */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -75,6 +103,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 .cardFestivales img {
@@ -88,7 +117,7 @@
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -99,8 +128,8 @@
 }
 
 .card-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--background-button);
+    color: var(--color-texto-secundario);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -111,6 +140,13 @@
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.titleGaleria {
+    font-size: var(--font-size-title);
+    padding: 20px;
+    text-align: center;
+    color: var(--color-texto-primario);
 }
 
 .gallery-row {
@@ -132,4 +168,5 @@
     text-align: center;
     font-size: 14px;
     margin-top: 10px;
+    color: var(--color-texto-primario);
 }

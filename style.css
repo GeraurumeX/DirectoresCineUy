@@ -1,3 +1,10 @@
+:root {
+    --color-background: #ffffff;
+    --color-background-seccion: #29282c;
+    --color-texto-navbar: #f7bb0e;
+    --background-button: #f00000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -221,7 +228,7 @@ section#segunda {
 .movies {
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    background-color: var(--color-background-seccion);
 }
 
 .containerMovies {
@@ -308,7 +315,7 @@ section#segunda {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;    
+    /*text-align: center;*/    
 }
 
 .cardDirector img {
@@ -327,7 +334,7 @@ section#segunda {
 
 .cardDirector p.textoDirector{
     font-size: 1rem;
-    color: #666;
+    color: var(--color-background-seccion);
     margin: 10px;
 }
 /* Footer */
