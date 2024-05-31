@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cine Uruguayo</title>
+
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/a25fd92ec4.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
         <div class="navbar">
             <div class="logo"><a href="#">Cine Uruguayo</a></div>
             <ul class="links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="/peliculas.html">Peliculas</a></li>
                 <li><a href="#directores">Directores</a></li>
@@ -29,93 +30,96 @@
             </div>
 
             <ul class="dropdown_menu">
-                <li><a href="#hero">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="#historia">Historia</a></li>
-                <li><a href="#movies">Peliculas</a></li>
-                <li><a href="#directores">Directores</a></li>
+                <li><a href="peliculas">Peliculas</a></li>
+                <li><a href="#directo">Directores</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <section class="container" id="hero">
+        <section class="containerHero" id="hero">
             <h1 class="titleHero">Bienvenidos</h1>
             <p class="textHero">Uruguay en Cuadros: 125 años de Cine, una historia que Inspira Pantalla a Pantalla</p>
         </section>
 
-        <section id="historia" class="containerHistoria">
-            <div class="containerHistoria">
-                <div class="image">
-                    <img src="/Assets/fotografias/623e3f4109ecd.jpg" alt="fotografia-cine-antigua">
+        <section class="main-section-historia" id="historia">
+            <div class="container">
+                <div class="left">
+                    <img src="/Assets/fotografias/623e3f4109ecd.jpg" alt="fotografia">
                 </div>
-                <div class="textoHistoria">
-                    <h2>Historia Cine en Uruguay</h2>
-                    <p>El cine uruguayo comenzó a fines del siglo XIX con la llegada del cinematógrafo al Río de la Plata. Aunque en menor cantidad que otras cinematografías de la región, desde inicios del siglo XX se han realizado películas en Uruguay de forma sostenida. La filmografía es rica y diversa en formatos, estilos y temáticas. Los primeros registros fílmicos datan de 1898, como “Carrera de bicicletas en el velódromo de Arroyo Seco” (considerada la primera película filmada en territorio uruguayo).</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="movies" class="movies">
-            <h2 class="titleMovies">Películas Uruguayas </h2>
-            <div class="containerMovies">
-                <div class="card">
-                    <img src="/Assets/AfichesMovie/gigante.jpg" alt="Fotografía 1">
-                    <h2 class="title">Gigante</h2>
-                    <h3 class="subtitle">2009-Comedia/Romance</h3>
-                    <p>Gigante” es la historia de Jara, un guardia de seguridad nocturno en un supermercado, que se enamora de Julia, una limpiadora a la que observa a través de las cámaras de vigilancia.</p>
-                    <button><a href="/peliculas.html">Ver más</a></button>
-                </div>
-                <div class="card">
-                    <img src="/Assets/AfichesMovie/la-vida-util-movie-poster.jpg" alt="Fotografía 1">
-                    <h2 class="title">La Vida Útil</h2>
-                    <h3 class="subtitle">2009-Comedia/Romance</h3>
-                    <p>“La vida útil” es un drama que retrata a Jorge, un empleado de una cinemateca por 25 años, quien tras su cierre debe reinventar su vida y pasiones, enfrentando retos personales</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="card">
-                    <img src="/Assets/AfichesMovie/la-cascara.jpg" alt="Cascara">
-                    <h2 class="title">La Cáscara</h2>
-                    <h3 class="subtitle">2007-Comedia/Drama</h3>
-                    <p>Dirigida por Carlos Ameglio, sigue la historia de un creativo publicitario que muere inesperadamente, y su antiguo compañero toma su lugar, apropiándose de sus ideas.</p>
-                    <button>Ver más</button>
+                <div class="right">
+                    <h1 class="titleHistoria">Historia del Cine en Uruguay</h1>
+                    <p class="textoHistoria">El cine uruguayo comenzó a fines del siglo XIX con la llegada del cinematógrafo al Río de la Plata. Aunque en menor cantidad que otras cinematografías de la región, desde inicios del siglo XX se han realizado películas en Uruguay de forma sostenida. La filmografía es rica y diversa en formatos, estilos y temáticas. Los primeros registros fílmicos datan de 1898, como “Carrera de bicicletas en el velódromo de Arroyo Seco” (considerada la primera película filmada en territorio uruguayo).</p>
                 </div>
             </div>
         </section>
 
-        <section id="directores" class="directores">
-            
-            <div class="containerDirectores">
+        <section class="main-section-peliculas" id="peliculas">
+            <h1 class="section-title">Peliculas Uruguayas</h1>
+            <div class="container">
+                <div class="cardPeliculas">
+                    <img src="/Assets/AfichesMovie/gigante.jpg" alt="Imagen 1">
+                    <h2 class="titlePelicula">Gigante</h2>
+                    <p class="infoPelicula">2009-Comedia/Romance</p>
+                    <p class="textoCardPelicula">Gigante” es la historia de Jara, un guardia de seguridad nocturno en un supermercado, que se enamora de Julia, una limpiadora a la que observa a través de las cámaras de vigilancia.</p>
+                    <button>Ver más</button>
+                </div>
+                <div class="cardPeliculas">
+                    <img src="/Assets/AfichesMovie/la-vida-util-movie-poster.jpg" alt="Imagen 2">
+                    <h2 class="titlePelicula">La Vida Útil</h2>
+                    <p class="infoPelicula">2009-Comedia/Romance</p>
+                    <p class="textoCardPelicula">“La vida útil” es un drama que retrata a Jorge, un empleado de una cinemateca por 25 años, quien tras su cierre debe reinventar su vida y pasiones, enfrentando retos personales</p>
+                    <button>Ver más</button>
+                </div>
+                <div class="cardPeliculas">
+                    <img src="/Assets/AfichesMovie/la-cascara.jpg" alt="Imagen 3">
+                    <h2 class="titlePelicula">La Cáscara</h2>
+                    <p class="infoPelicula">2007-Comedia/Drama</p>
+                    <p class="textoCardPelicula">Dirigida por Carlos Ameglio, sigue la historia de un creativo publicitario que muere inesperadamente, y su antiguo compañero toma su lugar, apropiándose de sus ideas.</p>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="main-section-directores" id="directores">
+            <h2 class="titleDirector">Directores Famosos</h2>
+            <div class="container">
                 <div class="cardDirector">
-                    <img src="/Assets/Directores/adrian-biniez.jpg" alt="Adrian">
-                    <h2 class="titleDirector">Adrian Biniez</h2>
+                    <img src="/Assets/Directores/adrian-biniez.jpg" alt="Foto1">
+                    <h3 class="nombreDirector">Adrian Biniez</h3>
                     <p class="textoDirector">Adrián Biniez, apodado como “Garza”, es un director de cine, actor, guionista y cantante de rock argentino radicado en Uruguay. Su película "Gigante" ganó el Gran Premio del Jurado en la Berlinale</p>
                 </div>
                 <div class="cardDirector">
-                    <img src="/Assets/Directores/Federico-Veiroj.jpg" alt="fede">
-                    <h2 class="titleDirector" >Federico Veiroj</h2>
+                    <img src="/Assets/Directores/Federico-Veiroj.jpg" alt="Foto2">
+                    <h3 class="nombreDirector">Federico Veiroj</h3>
                     <p class="textoDirector">Federico Veiroj (Montevideo, 1976) es un director, guionista y productor de cine. Es conocido por dirigir los largometrajes "Acné" (su ópera prima) y "La vida útil"</p>
                 </div>
                 <div class="cardDirector">
-                    <img src="/Assets/Directores/beatriz-flores.jpeg" alt="">
-                    <h2 class="titleDirector">Beatriz Flores</h2>
+                    <img src="/Assets/Directores/beatriz-flores.jpeg" alt="Foto3">
+                    <h3 class="nombreDirector">Beatriz Flores</h3>
                     <p class="textoDirector">Beatriz Flores Silva (nacida el 7 de noviembre de 1956 en Montevideo) es una directora, guionista y productora de cine uruguaya. Estudió dirección de cine en el Institut des arts de diffusion en Lovaina la Nueva, Bélgica.</p>
                 </div>
                 <div class="cardDirector">
-                    <img src="/Assets/Directores/fede-alvarez.jpg" alt="">
-                    <h2 class="titleDirector">Fede Alvarez</h2>
+                    <img src="/Assets/Directores/fede-alvarez.jpg" alt="Foto4">
+                    <h3 class="nombreDirector">Federico Alavrez</h3>
                     <p class="textoDirector">Federico «Fede» Álvarez (Montevideo, 9 de febrero de 1978) es un director de cine y guionista uruguayo. Es conocido principalmente por haber dirigido el reboot de posesion infernal y el thriller No Respires.</p>
                 </div>
             </div>
         </section>
-
-        <footer class="footerContainer">
-            <div class="socialIcons">
-                <a href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a>
-                <a href=""><i class="fa-brands fa-youtube fa-sm"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-sm" ></i></a>
+    </main>
+    
+    <footer>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
         </footer>
-    </main>
+    </footer>
     <script src="/main.js"></script>
 </body>
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cine Uruguayo</title>
+
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/a25fd92ec4.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="peliculas.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/peliculas.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,9 @@
             <div class="logo"><a href="#">Cine Uruguayo</a></div>
             <ul class="links">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#peliculas">Peliculas</a></li>
-                <li><a href="#directores">Directores</a></li>
+                <li><a href="#festivales">Festivales</a></li>
+                <li><a href="/peliculas.html">Peliculas</a></li>
+                <li><a href="#galeria">Galeria</a></li>
             </ul>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -31,8 +32,8 @@
 
             <ul class="dropdown_menu">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#movies">Peliculas</a></li>
+                <li><a href="#festivales">Festivales</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#directores">Directores</a></li>
             </ul>
         </div>
@@ -54,7 +55,7 @@
         </div>
     </section>
 
-    <section class="festivales">
+    <section class="festivales" id="festivales">
         <h2 class="titleFestivales">Festivales de Cine Uruguayos</h2>
         <div class="conteinerFestivales">
             <!--Card 1-->
@@ -62,7 +63,7 @@
                 <img src="/Assets/festivales/FestivalCineInternacionalUY.jpg" alt="Foto">
                 <div class="card-content">
                     <h2 class="card-title">Festival Internacional del Uruguay</h2>
-                    <p class="card-text">Texto de la tarjeta.</p>
+                    <p class="card-text">200 peliculas y 60 paises</p>
                     <button class="card-button">Ver más</button>
                 </div>
             </div>
@@ -71,7 +72,7 @@
                 <img src="/Assets/festivales/FestivalInterEscuelasCine.jpg" alt="Foto">
                 <div class="card-content">
                     <h2 class="card-title">Festival Internacional Escuelas de Cine</h2>
-                    <p class="card-text">Texto de la tarjeta.</p>
+                    <p class="card-text">Más de 150 escuelas .</p>
                     <button class="card-button">Ver más</button>
                 </div>
             </div>
@@ -80,7 +81,7 @@
                 <img src="/Assets/festivales/FestivalNuevoCine.jpg" alt="Foto">
                 <div class="card-content">
                     <h2 class="card-title">Festival de Cine Nuevo</h2>
-                    <p class="card-text">Texto de la tarjeta.</p>
+                    <p class="card-text">Cine Nacional Emergente.</p>
                     <button class="card-button">Ver más</button>
                 </div>
             </div>
@@ -89,14 +90,14 @@
                 <img src="/Assets/festivales/FestivalPuntaDelEste.jpg" alt="Foto">
                 <div class="card-content">
                     <h2 class="card-title">Festival Punta de Este</h2>
-                    <p class="card-text">Texto de la tarjeta.</p>
+                    <p class="card-text">Desde 1951 el más importante.</p>
                     <button class="card-button">Ver más</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <h2 class="titleGaleria">Cine Uruguayo</h2>
         <div class="gallery-container">
             <div class="gallery-row">
@@ -130,8 +131,17 @@
             </div>
         </div>
     </section>
+    
 
-
+    <footer>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </footer>
+    </footer>
     <script src="/main.js"></script>
 </body>
 </html>

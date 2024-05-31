@@ -1,19 +1,23 @@
 :root {
     --color-background: #ffffff;
     --color-background-seccion: #29282c;
+    --color-texto-primario: #29282c;
+    --color-texto-secundario: #ffffff;
     --color-texto-navbar: #f7bb0e;
     --background-button: #f00000;
+    --font: "Roboto", sans-serif;
+    --font-size-title: 36px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font);
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--color-background);
 }
 
 li {
@@ -22,8 +26,8 @@ li {
 
 a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
+    color: var(--background-button);
+    font-size: 1.3rem;
 }
 
 a:hover {
@@ -33,24 +37,28 @@ a:hover {
 /*  Header */
 header {
     position: relative;
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
     background-color: #333;
+    max-width: 100%;
+    /*margin: 2rem auto;*/
 }
 
 .navbar {
-    /*width: 100%;*/
+    width: 100%;
     height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    /*position: fixed;*/
+    position: fixed;
+    margin: 0 auto;
+    padding: 0 15px;
+    top: 0;
+    backdrop-filter: blur(10px);
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -93,317 +101,235 @@ header {
     justify-content: center;
 }
 
-/* Hero Section */
-section.container {
-    background-image: url("/Assets/Iconos/Cadeira_do_cineasta_do_cinema_brasileiro.jpg");
+ /* Estilos para el hero section */
+ .containerHero {
+    height: 100vh;
+    background-image: url('/Assets/Iconos/Cadeira_do_cineasta_do_cinema_brasileiro.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
-    height: 100vh;
-}
-
-section#hero {
-    height: 85vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: var(--color-texto-navbar);
     text-align: center;
-    color: #ffffff;
 }
 
-#hero h1 .titleHero {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.containerHero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.titleHero {
-    color: #f7bb0e;
-    font-size: 100px;
-    margin-bottom: 20px;
+.containerHero p.textHero {
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 800px;
 }
 
-p {
-    margin-top: 20px;
-}
 
-p.textHero {
-    margin-top: 20px;
-    color: #f7bb0e;
-    font-weight: bold;
-}
-
-#hero p {
-    font-size: 3rem;
-}
-
-/*  Primera seccion */
-.containerHistoria {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image {
-    flex: 60%;
-    padding: 20px;
-}
-
-.image img {
-    width: 720px;
-}
-
-.textoHistoria {
-    flex: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-  
-h2 {
-    font-size: 2rem;
-} 
-
-p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-/* Tarjetas Section */
-/*section#segunda {
-    background-color: wheat;
-}*/
-
-/*.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
+/* Estilos para el historia seccion */
+.main-section-historia {
     width: 100%;
-    margin: 0 auto;
-    background-color: darkgrey;
-}*/
-
-/*.card {
-    flex: 1;
-    width: 270px;
-    background-color: #f0f0f0;
-    margin-left: 10px;
-    height: 625px;
-    border-radius: 15px;
-}*/
-
-.card img {
-    width: 350px;
-    height: 380px;
-    margin-bottom: 15px;
-    /*background-size: cover;*/
-    border-radius: 15px 15px 0 0;
-}
-
-.card h2 {
-    padding: 10px;
-}
-
-.card h3 {
-    padding: 10px;
-}
-
-.card p {
-    padding: 10px;
-    
-}
-
-/*.card .btn {
-    display: block;
-    padding: 15px 20px;
-    background-color: #333;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    margin: 20px 50px;
-    color: #ffffff;
-}*/
-
-.card:hover {
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-}
-
-/* Section Peliculas */
-.movies {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background-seccion);
-}
-
-.titleMovies {
-    font-size: 36px;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-}
-
-.containerMovies {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     height: 100vh;
-}
-
-.card {
-    flex: 1;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    height: 750px;
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 5%;
-
-}
-
-.card h2 .title {
-    font-size: 1rem;
-    /*margin: 10px 0;*/
-}
-
-.card h3 .subtitle {
-    font-size: 1rem;
-   /*margin: 10px 0;*/
-}
-
-.card p {
-    font-size: 1rem;
-    color: #111;
-}
-
-.card button {
-    display: block;
-    padding: 10px 20px;
-    background-color: #f00000;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    margin: 20px 50px;
-    color: #ffffff;
-    border: none;
-    width: 80%;
-    font-size: 1.5rem;
-}
-
-.card:hover {
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-}
-
-
-/* Directores */
-.directores {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
-    background-color: #ffffff;
 }
 
-.containerDirectores {
+.container {
     width: 1200px;
     display: flex;
-    gap: 15px;
+    align-items: center;
 }
 
-.cardDirector {
+.left {
     flex: 1;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    /*text-align: center;*/    
+    padding: 20px;
 }
 
-.cardDirector img {
-    width: 100%;
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
+.left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.right h1.titleHistoria {
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
+.right p {
+    font-size: 1rem;
+    color: var(--color-texto-primario);
+}
 
-.cardDirector h2.titleDirector {
+
+/* Estilos para la seccion de peliculas*/
+.main-section-peliculas {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-seccion);
+}
+
+/* Estilos para el título */
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: var(--color-texto-secundario);
+}
+
+/* Estilos para el contenedor */
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para las tarjetas */
+.cardPeliculas {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    height: 80%;
+}
+
+.cardPeliculas img {
+    max-width: 100%;
+    height: 50vh;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cardPeliculas h2.titlePelicula {
     font-size: 1.5rem;
-    margin: 10px;
+    margin-bottom: 10px;
+    color: var(--color-texto-secundario);
+}
+
+.cardPeliculas p.infoPelicula {
+    font-size: 1rem;
+    color: var(--color-texto-secundario);
+}
+
+.cardPeliculas p.textoCardPelicula {
+    font-size: 1rem;
+    color: var(--color-texto-secundario);
+    margin-bottom: 10px;
+}
+
+.cardPeliculas button {
+    background-color: var(--background-button);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.cardPeliculas button:hover {
+    background-color: var(--color-background-seccion);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+
+/* Estilos para la seccion de directores*/
+.main-section-directores {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+
+.titleDirector {
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cardDirector {
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 600px;
+}
+
+.cardDirector img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardDirector h3.nombreDirector {
+    font-size: 18px;
+    margin: 10px 0;
     text-align: center;
 }
 
-.cardDirector p.textoDirector{
-    font-size: 1rem;
-    color: var(--color-background-seccion);
-    margin: 10px;
+.card p.textoDirector {
+    font-size: 14px;
+    color: var(--color-texto-primario);
 }
-/* Footer */
+
+
+/* Estilos para el footer */
 footer {
-    background-color: black;
-}
-
-.footerContainer {
-    width: 100%;
-    padding: 10px 20px 10px;
-}
-
-.socialIcons {
+    background-color: var(--color-background-seccion);
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.socialIcons a {
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 32px;
+    color: var(--color-background);
     text-decoration: none;
-    padding: -5px;
-    margin: 0 2px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+    transition: transform 0.2s;
 }
 
-.socialIcons a i {
-    font-size: 1em;
-    color: black;
-    opacity: 0.9; 
-    width: 25px;
-    height: 25px;
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--color-texto-navbar);
 }
 
-.socialIcons a:hover {
-    background-color: #111;
-    transition: 0.5s;
-}
 
-.socialIcons a:hover i{
-    color: white;
-    transition:0.5s
-}
+
+
+
+
+
+
+
+
+
 
 /* Reponsive Design */
 @media (max-width: 992px) {
